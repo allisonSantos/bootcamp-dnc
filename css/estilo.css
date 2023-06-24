@@ -10,7 +10,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid red;
 }
 #principal a{
     color: white;
@@ -22,7 +21,6 @@
     display: flex;
     width: 50%;
     justify-content:space-around;
-    border:1px solid red;
 }
 #principal button{
     box-shadow: 3px 2px 4px rgba(12, 112, 242, 0.25);
