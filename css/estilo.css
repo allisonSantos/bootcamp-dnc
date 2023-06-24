@@ -2,11 +2,16 @@
     margin: 0;
     padding: 0;
 }
+:root{
+    --fonte-padrão:'inter';
+    --cor-fundo: #303030;
+}
+/* menu principal */
 #principal{
     width: 100%;
     height: 80px;
     background-color: #202020;
-    font-family: "inter";
+    font-family: var(--fonte-padrão);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -22,8 +27,12 @@
     width: 50%;
     justify-content:space-around;
 }
+.menu a:hover{
+    background-color: #303030;
+}
+
 #principal button{
-    box-shadow: 3px 2px 4px rgba(12, 112, 242, 0.25);
+    box-shadow: 2px 2px 3px black;
     font-weight: 600;
     font-size: 15px;
     margin-right: 10%;
@@ -32,21 +41,24 @@
     border: none;
     background-color: blue;
     color: white;
+    cursor: pointer;
 }
 /* Fim menu principal */
+/* Header informacional */
 header{
+    width: 100%;
+    padding-bottom: 50px;
     text-align: center;
-    height: 250px;
-    background-color: #303030;
+    background-color:var(--cor-fundo);
 }
 header h1{
     font-size: 30px;
     padding-top: 50px;
     color: white;
-    font-family: "inter";
+    font-family: var(--fonte-padrão);
 }
 header p{
-    font-family: "inter";
+    font-family: var(--fonte-padrão);
     color: white;
     padding-top: 20px;
 }
@@ -58,5 +70,52 @@ header p .dev{
     background-color: black;
     font-weight: 600;
 }
-/* Fim informacional */
-
+/* Fim header informacional */
+/* Começo section */
+section{
+    display: flex;
+    justify-content: center;
+    background-color: #303030;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    font-family: var(--fonte-padrão);
+    color: white;
+    width: 500px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+form input{
+    padding: 10px 0 10px 5px;
+    margin: 5px 0 20px 0;
+    border-radius: 5px;
+    border:none;
+}
+form input::placeholder{
+    color: rgb(68, 68, 68);
+}
+form input[type="checkbox"]{
+    scale: 1;
+}form .checkbox-sec input{
+    margin: 10px 5px 20px 10px;
+}
+form .checkbox-sec{
+    font-size: 14px;
+    line-height: 10px;
+    text-indent: 10px;
+}
+form button{
+    padding: 10px;
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+    background-color: blue;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px black;
+    margin: 20px 0 30px 0;
+    cursor: pointer;
+}
+/* fim section */
