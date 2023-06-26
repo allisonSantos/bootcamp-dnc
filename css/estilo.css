@@ -39,7 +39,7 @@
     width: 80px;
     height: 40px;
     border: none;
-    background-color: blue;
+    background-color: #0C70F2;
     color: white;
     cursor: pointer;
 }
@@ -104,14 +104,14 @@ form input[type="checkbox"]{
 form .checkbox-sec{
     font-size: 14px;
     line-height: 10px;
-    text-indent: 10px;
+    
 }
 form button{
     padding: 10px;
     color: white;
     font-weight: 600;
     font-size: 15px;
-    background-color: blue;
+    background-color:#0C70F2;
     border: none;
     border-radius: 5px;
     box-shadow: 2px 2px 3px black;
@@ -119,3 +119,43 @@ form button{
     cursor: pointer;
 }
 /* fim section */
+/* Começo footer */
+footer{
+    background-color:#0C70F2;
+    width: 100%;
+    font-family: var(--fonte-padrão);
+}
+footer .linha1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+footer .linha1 h2{
+    color: white;
+    background-color: #303030;
+    text-align: center;
+    margin: 15px 0 15px 0;
+    border-radius: 10px;
+}
+footer ul{
+    list-style-type: none;
+    color: white;
+}
+footer li{
+    margin-bottom: 20px;
+}
+footer li a{
+    text-decoration: none;
+    color: white;
+}
+footer p{
+    color: white;
+}
+.linha2{
+    color: white;
+    text-align: center;
+    font-size: 13px;
+    padding: 50px 0 20px 0;
+}
+/* Final footer */
