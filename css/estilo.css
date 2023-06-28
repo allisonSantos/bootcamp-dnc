@@ -98,7 +98,8 @@ form input::placeholder{
 }
 form input[type="checkbox"]{
     scale: 1;
-}form .checkbox-sec input{
+}
+form .checkbox-sec input{
     margin: 10px 5px 20px 10px;
 }
 form .checkbox-sec{
@@ -159,3 +160,60 @@ footer p{
     padding: 50px 0 20px 0;
 }
 /* Final footer */
+
+/* Inicio media query */
+@media only screen and (max-width: 600px){
+    /* Menu principal */
+    #principal{
+        width: 100%;
+        display: flex;
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .menu{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #principal a{
+        color: white;
+        font-size: 15px;
+        margin: 5px;
+    }
+    #principal button{
+        box-shadow: 2px 2px 3px black;
+        font-size: 15px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+    /* informacional */
+    form{
+        display: flex;
+        flex-direction: column;
+        font-size: 12px;
+        font-family: var(--fonte-padrão);
+        color: white;
+        width: 340px;
+    }
+    form .checkbox-sec input{
+        margin: 10px 0px 20px 0px;
+        font-size: 5px;
+    }
+
+    /* Footer */
+    footer .linha1{
+        display: flex;
+        flex-direction: column;
+    }
+    footer .endereco{
+        width: 90%;
+        text-align: center;
+    }
+    footer .linha2{
+        font-size: 12px;
+    }
+    /* Fim media query */
+}
